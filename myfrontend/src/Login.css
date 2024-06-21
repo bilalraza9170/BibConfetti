@@ -1,0 +1,73 @@
+/* Assuming Login.css is used, add or ensure these styles are present */
+
+.login-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: var(--grey-light); /* Light grey background */
+}
+
+.login-form {
+  background-color: var(--white); /* White form background */
+  padding: 40px;
+  border-radius: 15px;
+  box-shadow: 0 8px 16px rgba(0,0,0,0.1);
+  width: 100%;
+  max-width: 400px;
+}
+
+.app-title, .login-form h2 {
+  text-align: center;
+  color: var(--blue-dark); /* Dark blue text for headings */
+  margin-bottom: 20px;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 10px;
+  color: var(--grey-dark); /* Dark grey text for labels */
+  font-weight: 600; /* Semi-bold labels */
+}
+
+.form-group input, .form-group select {
+  width: 100%;
+  padding: 15px;
+  font-size: 1rem;
+  border: 2px solid #e0e0e0; /* Light grey border */
+  border-radius: 8px;
+  background-color: #fafafa; /* Very light grey for input backgrounds */
+  color: var(--grey-dark); /* Dark grey text for input */
+}
+/* Login.css */
+.login-form .form-group input,
+.login-form .form-group select {
+  width: 100%; /* This makes the input and select elements take up 100% of their parent's width */
+  padding: 10px; /* Add padding for better visual appearance */
+  margin-bottom: 10px; /* Spacing between each form element */
+  box-sizing: border-box; /* Ensures padding does not affect the final computed width */
+}
+
+
+.form-group input:focus, .form-group select:focus {
+  border-color: var(--blue-primary); /* Primary color on focus */
+}
+
+.login-button {
+  width: 100%;
+  background-color: var(--blue-primary); /* Primary button color */
+  color: var(--white); /* White text for button */
+  padding: 15px 20px;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-weight: bold;
+  margin-top: 10px; /* Space above the button */
+}
+
+.login-button:hover {
+  background-color: var(--blue-dark); /* Darken button on hover */
+}

@@ -1,0 +1,28 @@
+.submission-display-page {
+    padding: 20px;
+  }
+  
+  .submission-title {
+    color: var(--blue-dark);
+  }
+  
+  .submission-table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  .submission-table .table-header th {
+    background-color: var(--blue-primary);
+    color: var(--white);
+    padding: 10px;
+  }
+  
+  .submission-table .table-row td {
+    padding: 10px;
+    border-bottom: 1px solid var(--grey-light);
+  }
+  
+  .submission-table .table-row:last-child td {
+    border-bottom: none;
+  }
+  

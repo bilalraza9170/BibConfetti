@@ -1,0 +1,79 @@
+/* Conference Details Page Specific Styles, mirroring Login styles for center alignment */
+
+.conference-details {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: var(--grey-light); /* Light grey background */
+}
+
+.conference-form {
+  background-color: var(--white); /* White form background */
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 0 8px 16px rgba(0,0,0,0.1);
+  width: 100%;
+  max-width: 400px;
+}
+
+.conference-title, .conference-form h2 {
+  text-align: center;
+  color: var(--blue-dark); /* Dark blue text for headings */
+  margin-bottom: 20px;
+}
+
+.conference-group {
+  margin-bottom: 10px;
+}
+
+.conference-group label {
+  display: block;
+  margin-bottom: 10px;
+  color: var(--grey-dark); /* Dark grey text for labels */
+  font-weight: 600; /* Semi-bold labels */
+}
+
+.conference-group input, .conference-group select {
+  width: 100%;
+  padding: 10px;
+  font-size: 1rem; /* Font size for inputs */
+  border: 2px solid #e0e0e0; /* Light grey border */
+  border-radius: 8px;
+  background-color: #fafafa; /* Very light grey for input backgrounds */
+  color: var(--grey-dark); /* Dark grey text for input */
+}
+
+.conference-group input:focus, .conference-group select:focus {
+  border-color: var(--blue-primary); /* Primary color on focus */
+}
+
+.form-buttons {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+.conference-button {
+  width: 48%; /* Adjusted to fit two buttons side by side */
+  background-color: var(--blue-primary); /* Primary button color */
+  color: var(--white); /* White text for button */
+  padding: 10px;
+  border-radius: 4px;
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+.conference-button:hover {
+  background-color: var(--blue-dark); /* Darken button on hover */
+}
+
+.conference-button.cancel {
+  background-color: var(--blue-light);
+  color: var(--grey-dark);
+}
+
+/* Additional specific customizations */
+#acronym, #startDate {
+  font-size: 1rem; /* Adjusted font size for acronym and start date fields */
+}

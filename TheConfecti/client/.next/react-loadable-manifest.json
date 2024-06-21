@@ -1,0 +1,62 @@
+{
+  "pages\\dashboard\\researcher\\index.jsx -> ./screens/five.jsx": {
+    "id": "pages\\dashboard\\researcher\\index.jsx -> ./screens/five.jsx",
+    "files": [
+      "static/chunks/pages_dashboard_researcher_screens_five_jsx.js"
+    ]
+  },
+  "pages\\dashboard\\researcher\\index.jsx -> ./screens/four.jsx": {
+    "id": "pages\\dashboard\\researcher\\index.jsx -> ./screens/four.jsx",
+    "files": [
+      "static/chunks/pages_dashboard_researcher_screens_four_jsx.js"
+    ]
+  },
+  "pages\\dashboard\\researcher\\index.jsx -> ./screens/one.jsx": {
+    "id": "pages\\dashboard\\researcher\\index.jsx -> ./screens/one.jsx",
+    "files": [
+      "static/chunks/pages_dashboard_researcher_screens_one_jsx.js"
+    ]
+  },
+  "pages\\dashboard\\researcher\\index.jsx -> ./screens/three.jsx": {
+    "id": "pages\\dashboard\\researcher\\index.jsx -> ./screens/three.jsx",
+    "files": [
+      "static/chunks/pages_dashboard_researcher_screens_three_jsx.js"
+    ]
+  },
+  "pages\\dashboard\\researcher\\index.jsx -> ./screens/two.jsx": {
+    "id": "pages\\dashboard\\researcher\\index.jsx -> ./screens/two.jsx",
+    "files": [
+      "static/chunks/pages_dashboard_researcher_screens_two_jsx.js"
+    ]
+  },
+  "pages\\dashboard\\reviewer\\index.jsx -> ./screens/five.jsx": {
+    "id": "pages\\dashboard\\reviewer\\index.jsx -> ./screens/five.jsx",
+    "files": [
+      "static/chunks/pages_dashboard_reviewer_screens_five_jsx.js"
+    ]
+  },
+  "pages\\dashboard\\reviewer\\index.jsx -> ./screens/four.jsx": {
+    "id": "pages\\dashboard\\reviewer\\index.jsx -> ./screens/four.jsx",
+    "files": [
+      "static/chunks/pages_dashboard_reviewer_screens_four_jsx.js"
+    ]
+  },
+  "pages\\dashboard\\reviewer\\index.jsx -> ./screens/one.jsx": {
+    "id": "pages\\dashboard\\reviewer\\index.jsx -> ./screens/one.jsx",
+    "files": [
+      "static/chunks/pages_dashboard_reviewer_screens_one_jsx.js"
+    ]
+  },
+  "pages\\dashboard\\reviewer\\index.jsx -> ./screens/three.jsx": {
+    "id": "pages\\dashboard\\reviewer\\index.jsx -> ./screens/three.jsx",
+    "files": [
+      "static/chunks/pages_dashboard_reviewer_screens_three_jsx.js"
+    ]
+  },
+  "pages\\dashboard\\reviewer\\index.jsx -> ./screens/two.jsx": {
+    "id": "pages\\dashboard\\reviewer\\index.jsx -> ./screens/two.jsx",
+    "files": [
+      "static/chunks/pages_dashboard_reviewer_screens_two_jsx.js"
+    ]
+  }
+}

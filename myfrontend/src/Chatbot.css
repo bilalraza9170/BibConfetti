@@ -1,0 +1,110 @@
+/* Chatbot.css */
+
+.chatbot-container {
+  width: 100vw;  /* Full width of the viewport */
+  height: 100vh; /* Full height of the viewport */
+  position: fixed; /* Use fixed to keep it in view even when scrolling */
+  top: 0;
+  left: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end; /* Aligns the input area to the bottom */
+  background-color: #fff; /* Or any color/background you prefer */
+}
+
+.messages-container {
+  flex-grow: 1;
+  overflow-y: auto;
+  padding: 20px; /* Adjust padding as needed */
+  margin-bottom: 140px; /* Room for input-area and pdf-upload-button */
+}
+
+.input-area {
+  width: 100%; /* Full width */
+  position: fixed; /* Fixed at the bottom */
+  bottom: 0; /* Aligns to the bottom */
+  background-color: #fff; /* Matching the chatbot container */
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Center children horizontally */
+}
+
+.message-input-container {
+  display: block;
+  justify-content: center; /* Center horizontally */
+  align-items: center; /* Align items vertically */
+  width: 200%; /* Adjust the width as needed */
+  margin-bottom: 10px; /* Space from the bottom */
+  size: 0ch;
+}
+
+.pdf-upload-button {
+  display: block; /* Block display to take full width */
+  width: 30%; /* Shrink width to 30% */
+  padding: 10px 20px; /* Padding for aesthetic height */
+  background-color:lightseagreen; /* Light grey background */
+  text-align: center; /* Centers the text inside the button */
+  border-top: 1px solid #ccc; /* Border to separate from the message container */
+  margin: 0 auto 10px; /* Center the button and add margin at the bottom */
+  cursor: pointer; /* Indicates the element is clickable */
+  font-size: 16px; /* Font size for visibility */
+  border-radius: 20px; /* Rounded corners */
+}
+
+
+
+.message-input {
+  flex-grow: 1; /* Allows input to take up available space */
+  border: none; /* No border for the input */
+  padding: 15px 20px; /* Padding inside the input for aesthetics */
+  font-size: 16px; /* Readable text size */
+  margin-right: -1px;
+  border-radius: 20px 0 0 20px; 
+  border-color: aquamarine;
+  /* Rounded corners on the left side */
+}
+
+.send-button {
+  width: 60px; /* Width for the send button */
+  background-color:lightseagreen;/* Button color */
+  color: white; /* Text color */
+  border: none; /* No border */
+  padding: 15px 20px; /* Padding for height and comfort */
+  cursor: pointer; /* Indicates the element is clickable */
+  font-size: 24px; /* Icon size */
+  border-radius: 0 20px 20px 0; /* Rounded corners on the right side */
+}
+
+.send-button:hover {
+  background-color: #0056b3; /* Hover state color change */
+}
+
+/* Styles for user and bot messages */
+.message {
+  margin: 5px 0;
+  padding: 10px;
+  border-radius: 5px;
+  background-color: #f1f1f1;
+}
+
+.user {
+  align-self: flex-end;
+  background-color: #dcf8c6;
+}
+
+.bot {
+  align-self: flex-start;
+  background-color: #f1f1f1;
+}
+
+/* Responsive adjustments for smaller screens */
+@media (max-width: 600px) {
+  .send-button {
+    font-size: 18px; /* Smaller font size on small screens */
+    padding: 10px 15px; /* Adjust padding on small screens */
+  }
+
+  .pdf-upload-button {
+    width: 50%; /* Adjust width for smaller screens */
+  }
+}

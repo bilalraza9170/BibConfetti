@@ -1,0 +1,88 @@
+/* Existing styles for reference */
+.new-form-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: var(--grey-light); /* Ensure this variable is defined */
+}
+
+.new-form {
+  background-color: var(--white); /* Ensure this variable is defined */
+  padding: 40px;
+  border-radius: 15px;
+  box-shadow: 0 8px 16px rgba(0,0,0,0.1);
+  width: 100%;
+  max-width: 500px;
+}
+
+.new-form h1 {
+  text-align: center;
+  color: var(--blue-dark); /* Ensure this variable is defined */
+  margin-bottom: 20px;
+}
+
+.new-form-group {
+  margin-bottom: 20px;
+}
+
+.new-form-group label {
+  display: block;
+  margin-bottom: 10px;
+  color: var(--grey-dark); /* Ensure this variable is defined */
+  font-weight: 600;
+}
+
+.new-form-group input,
+.new-form-group textarea {
+  width: 100%;
+  padding: 15px;
+  font-size: 1rem;
+  border: 2px solid #e0e0e0;
+  border-radius: 8px;
+  background-color: #fafafa;
+  color: var(--grey-dark); /* Ensure this variable is defined */
+}
+
+.new-form-group input:focus, 
+.new-form-group textarea:focus {
+  border-color: var(--blue-primary); /* Ensure this variable is defined */
+  outline: none;
+}
+
+.new-form button {
+  width: 100%;
+  background-color: var(--blue-primary); /* Ensure this variable is defined */
+  color: var(--white); /* Ensure this variable is defined */
+  padding: 15px 20px;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-weight: bold;
+  margin-top: 20px;
+  border: none;
+  cursor: pointer;
+}
+
+.new-form button:hover {
+  background-color: var(--blue-dark); /* Ensure this variable is defined */
+}
+
+/* Additional styles for new elements */
+.new-form-group input[type="file"] {
+  border: none;
+  background-color: transparent;
+  padding: 0;
+}
+
+.new-form-group input[type="file"]::file-selector-button {
+  background-color: var(--blue-light); /* Ensure this variable is defined */
+  color: var(--white); /* Ensure this variable is defined */
+  padding: 10px;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+}
+
+.new-form-group input[type="file"]::file-selector-button:hover {
+  background-color: var(--blue-primary); /* Adjust the color as needed */
+}

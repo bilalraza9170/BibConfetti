@@ -1,0 +1,161 @@
+/* Dashboard.css */
+
+:root {
+  --blue-primary: #2A9D8F;
+  --blue-dark: #264653;
+  --blue-light: #A8DADC;
+  --grey-dark: #333;
+  --grey-light: #f0f0f0;
+  --white: #ffffff;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: var(--grey-dark);
+  background-color: var(--grey-light);
+  margin: 0;
+}
+
+.dashboard {
+  display: flex;
+  flex-direction: row;
+  max-height: 100vh;
+  overflow: hidden;
+}
+
+.sidebar {
+  width: 250px;
+  background-color: var(--blue-dark);
+  color: var(--white);
+  padding: 20px;
+  overflow-y: auto;
+}
+
+.sidebar .logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-weight: bold;
+  margin-bottom: 30px;
+}
+
+.logo-icon {
+  color: var(--blue-primary);
+}
+
+.menu {
+  list-style: none;
+  padding: 0;
+}
+
+.menu-item {
+  padding: 10px 15px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.menu-item:hover, .menu-item.active {
+  background-color: var(--blue-primary);
+}
+
+.menu-item.logout:hover {
+  color: var(--blue-light);
+}
+
+.icon {
+  min-width: 20px;
+}
+
+.search-bar {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  width: 100%; /* Full width to increase the length of the search box */
+}
+
+.search-input {
+  padding: 12px 15px;
+  font-size: 1.1rem;
+  border: 1px solid var(--blue-dark);
+  border-radius: 5px;
+  flex-grow: 1;
+  width: calc(100% - 40px); /* Adjusted to ensure button fits */
+}
+
+.search-button {
+  background-color: var(--blue-primary);
+  border: none;
+  padding: 12px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+  color: var(--white);
+}
+
+.content {
+  flex-grow: 1;
+  overflow-y: auto;
+  padding: 10px; /* Reduced padding for more space */
+  display: flex;
+  flex-direction: column;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: -5px; /* Reduced margin */
+}
+
+.header h1 {
+  text-align: left;
+  width: 100%;
+  text-decoration-skip-ink: var(--grey-light);
+}
+
+.section {
+  background-color: var(--white);
+  padding: 7px; /* Reduced padding */
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+  margin-bottom: 10px; /* Reduced gap between sections */
+}
+
+.list {
+  list-style: none;
+  padding: 0;
+}
+
+.list-item {
+  padding: 8px 0; /* Reduced padding for list items */
+  border-bottom: 1px solid var(--grey-light);
+}
+
+.list-item:last-child {
+  border-bottom: none;
+}
+
+.button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.button.primary {
+  background-color: var(--blue-primary);
+  color: var(--white);
+}
+
+.button.secondary {
+  background-color: var(--blue-light);
+  color: var(--grey-dark);
+}
+
+.footer {
+  display: flex;
+  justify-content: end;
+  gap: 10px;
+}

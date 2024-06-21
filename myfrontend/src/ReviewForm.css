@@ -1,0 +1,135 @@
+/* ReviewForm.css */
+
+.review-form {
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 500px;
+  margin: 20px auto;
+}
+
+.review-form h1, .review-form h3 {
+  text-align: center;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.review-form input[type="text"],
+.review-form input[type="email"],
+.review-form input[type="password"],
+.review-form input[type="tel"],
+.review-form textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+  transition: border-color 0.3s;
+}
+
+.review-form input[type="text"]:focus,
+.review-form input[type="email"]:focus,
+.review-form input[type="password"]:focus,
+.review-form input[type="tel"]:focus,
+.review-form textarea:focus {
+  border-color: #007bff; /* Blue border for focus */
+}
+
+.review-form button {
+  background-color: #007bff; /* Blue background for buttons */
+  color: white;
+  padding: 10px 15px;
+  margin: 10px 0;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  width: 100%;
+  transition: background-color 0.3s;
+}
+
+.review-form button:hover {
+  background-color: #0056b3; /* Darker blue on hover */
+}
+
+/* ... your existing styles ... */
+
+/* Updated Step Indicator Styles */
+.step-indicator {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 30px;
+}
+
+.step {
+  width: 40px;
+  height: 40px;
+  line-height: 38px; /* Adjust for border */
+  border-radius: 50%;
+  text-align: center;
+  margin: 0 2px;
+  background: #f8f9fa;
+  color: #6c757d;
+  border: 2px solid #dee2e6;
+  cursor: pointer;
+  transition: background-color 0.3s, border-color 0.3s, color 0.3s;
+}
+
+.step.active, .step:hover {
+  background-color: #007bff; /* Blue background for active/hover steps */
+  color: white;
+  border-color: #007bff;
+}
+
+.step.completed {
+  background-color: #28a745; /* Green background for completed steps */
+  color: white;
+  border-color: #28a745;
+}
+/* ReviewForm.css */
+/* ... rest of your existing CSS ... */
+
+/* Progress Bar Styles */
+/* ReviewForm.css */
+/* ... existing styles ... */
+
+/* Progress Bar Styles */
+/* Adjustments to the progress bar container and numbers */
+/* Adjust the height of the progress bar */
+.progress-bar {
+  height: 20px; /* Increase the height */
+  background: #007bff; /* Blue background */
+  width: 0%;
+  transition: width 0.7s ease-in-out;
+}
+
+/* Style adjustments for the progress numbers */
+.progress-number {
+  width: 30px; /* Adjust size as needed */
+  height: 30px; /* Adjust size as needed */
+  line-height: 30px; /* Center the text vertically */
+  border-radius: 50%;
+  text-align: center;
+  background-color: #f8f9fa;
+  color: #6c757d;
+  border: 2px solid #dee2e6;
+  position: relative; /* Ensure this is relative for positioning the tick icon */
+}
+
+/* Style for the tick icon */
+.tick-icon {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 20px; /* Adjust the size of the tick icon */
+  color: white; /* Color of the tick icon */
+  display: none; /* Hide by default */
+}
+
+/* Show the tick icon when the step is completed */
+.progress-number.completed .tick-icon {
+  display: block;
+}

@@ -1,0 +1,53 @@
+.withdraw-page {
+  padding: 20px;
+  background-color: var(--white); /* Consistent with login form background */
+  border-radius: 15px; /* Matching border-radius with login form */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1); /* Consistent shadow effect */
+  width: 100%;
+  max-width: 400px; /* Same max-width for consistency */
+  margin: auto; /* Center the container */
+}
+
+.submission-details {
+  margin-bottom: 20px;
+  color: var(--grey-dark); /* Consistent text color with the login form */
+}
+
+.delete-button {
+  padding: 15px 20px; /* Padding consistent with login button */
+  background-color: var(--red-primary); /* Use a variable for primary red color */
+  color: var(--white); /* Consistent button text color */
+  border: none;
+  border-radius: 8px; /* Consistent border-radius */
+  cursor: pointer;
+  font-weight: bold;
+  width: 100%; /* Full width button */
+  font-size: 1rem; /* Consistent font sizing with login button */
+  margin-top: 20px;
+}
+
+.delete-button:hover {
+  background-color: var(--red-dark); /* Darker red for hover, define this in your variables */
+}
+:root {
+  --red-primary: #ff4d4d; /* Your primary red color */
+  --red-dark: #ff3333; /* Darker shade for hover state */
+}
+/* Existing styles */
+
+.back-button {
+  padding: 10px 20px;
+  background-color: var(--grey-light); /* Light grey background for a less prominent button */
+  color: var(--grey-dark); /* Dark grey text to maintain consistency */
+  border: 2px solid var(--grey); /* Optional: define a grey border color in your variables */
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: bold;
+  margin-top: 10px;
+  width: 100%; /* Consistent full-width button */
+  margin-bottom: 20px; /* Spacing below the button */
+}
+
+.back-button:hover {
+  background-color: var(--grey); /* Slightly darker grey on hover */
+}
